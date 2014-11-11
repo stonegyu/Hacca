@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            
+            <ImageView
+                android:id="@+id/substyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/list_page_adapter_child_layout_side" />	
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_page_adapter_child_layout_background"
+            android:layout_weight="8"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#808080"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dynamicArea"
+                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_marginLeft="20dp">
+            </LinearLayout>
+			
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#808080"
+                android:orientation="horizontal" >
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/student_mail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" 
+                    android:text="student mail"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/student_blog"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" 
+                    android:autoLink="web"
+                    android:text="student blog"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#808080"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/professor_comment_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#808080"
+                android:orientation="horizontal" >
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/student_push_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/commenticon" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+
+</ScrollView>

@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" 
+        android:weightSum="10" 
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginRight="7.5dp">
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            
+            <ImageView
+                android:id="@+id/substyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/list_page_adapter_child_layout_side" />	
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_page_adapter_child_layout_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#808080"
+                android:orientation="horizontal" >
+            </LinearLayout>
+            <TextView
+                android:id="@+id/inform_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2013/07/22"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical" 
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/inform_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:autoLink="web"
+                    android:gravity="top" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#808080"
+                android:orientation="horizontal" >
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_margin="5dp">
+                <ImageButton
+                    android:id="@+id/inform_editbtn"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/noticeboard_edit_btn"
+                    android:layout_marginRight="5dp" />
+                <ImageButton
+                    android:id="@+id/inform_deletebtn"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/noticeboard_delete_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

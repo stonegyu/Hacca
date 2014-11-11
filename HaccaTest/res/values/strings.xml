@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hacca</string>
+    <string name="action_settings">Settings</string>
+    
+    <string-array name="ages">
+        <item>선택</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+    
+    <string-array name="sexs">
+        <item>선택</item>
+        <item>남</item>
+        <item>여</item>
+    </string-array>
+    
+    <string-array name="departments">
+        <item>선택</item>
+        <item>무용학과</item>
+        <item>회화과</item>
+        <item>시각영상디자인전공</item>
+        <item>애니메이션제품디자인전공</item>
+        <item>인테리어디자인전공</item>
+        <item>패션디자인전공</item>
+        <item>의류패션산업전공</item>
+    </string-array>
+    <string-array name="company_size_list">
+        <item>선택</item>
+        <item>대기업</item>
+        <item>중견기업</item>
+        <item>중소기업</item>
+        <item>벤처기업</item>
+    </string-array>
+    <string-array name="company_businesstype_list">
+        <item>선택</item>
+        <item>시각디자인</item>
+        <item>무용</item>
+        <item>영상디자인</item>
+        <item>애니메이션</item>
+        <item>제품디자인</item>
+        <item>인테리어디자인</item>
+    </string-array>
+    <string-array name="company_worktype_list">
+        <item>선택</item>
+        <item>정직원</item>
+        <item>계약직</item>
+        <item>인턴</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_page_activity_layout_background" >
+
+        <ExpandableListView
+            android:id="@+id/company_list_page_activity_expandabellistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search"
+            android:groupIndicator="@null"
+            android:listSelector="@android:color/transparent" >
+        </ExpandableListView>
+
+        <ImageView
+            android:id="@+id/company_list_page_activity_layout_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/company_list_page_activity_layout_titlebar" />
+
+        <TextView
+            android:id="@+id/company_list_page_activity_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="기업"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/company_list_page_activity_layout_exit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/list_page_activity_layout_exitbar" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/search"
+            android:src="@drawable/list_page_activity_layout_searchbar_gradation" />
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/company_list_page_activity_layout_titlebar"
+            android:background="@drawable/list_page_activity_layout_searchbar"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <EditText
+                android:id="@+id/company_list_page_activity_layout_search_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="15dp"
+                android:layout_weight="10"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:id="@+id/company_list_page_activity_layout_search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:src="@drawable/list_page_activity_layout_search_icon" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
